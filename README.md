@@ -1,6 +1,6 @@
 # Web Chat
 
-This is a simple web chat application that uses websockets to communicate between clients and the server. The server is written in Python using the `websockets` library and the client is written in ReactJs using the `WebSocket` API.
+This is a simple web chat application that uses websockets to communicate between clients and the server. The server is written in Golang using the `websockets` library and the client is written in ReactJs using the `WebSocket` API.
 
 # Architecture
 <p align="center">
