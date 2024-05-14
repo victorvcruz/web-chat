@@ -1,11 +1,11 @@
-FROM golang:1.21 AS build
+FROM golang:1.22 AS build
 
 ARG GITHUB_TOKEN
 ENV CGO_ENABLED=0 GO111MODULE=on GOOS=linux
 
 WORKDIR /app
 
-COPY ../../../../.. ./
+COPY ../.. ./
 
 RUN cd ./cmd \
     && go build -a -installsuffix cgo -ldflags="-s -w" -o /server
